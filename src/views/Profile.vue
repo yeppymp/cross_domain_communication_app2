@@ -48,7 +48,7 @@ export default {
         name: this.name
       }
 
-      window.parent.postMessage(JSON.stringify(payload), '*');
+      window.parent.postMessage(JSON.stringify(payload), 'http://localhost:8080');
       this.name = ''
     }
   }
